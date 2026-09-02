@@ -85,35 +85,35 @@
 
 
 
-import java.util.Scanner;
-public class hello{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the units : ");
-        int unit=sc.nextInt();
-        int bill;
-        if(unit<=0){
-            bill=0;
-        }
-        else if(unit<=100){
-            bill=unit*5;
-        }
-        else if(unit>100 && unit<=200){
-            bill=500+((unit-100)*7);
-        }
-        else if(unit>200 && unit<=300){
-            bill=1200+((unit-200)*10);
-        }
-        else{
-            bill=2200+((unit-300)*15);
-        }
-        if(bill==0){
-            System.out.println("Invalid units");
-        }
-        else{
-            System.out.print("Total bill to be paid : ");
-            System.out.println(bill);
-        }
-        sc.close();
-    }
-}
+// import java.util.Scanner;
+// public class hello{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter the units : ");
+//         int unit=sc.nextInt();
+//         int bill;
+//         if(unit<=0){
+//             bill=0;
+//         }
+//         else if(unit<=100){
+//             bill=unit*5;
+//         }
+//         else if(unit>100 && unit<=200){
+//             bill=500+((unit-100)*7);
+//         }
+//         else if(unit>200 && unit<=300){
+//             bill=1200+((unit-200)*10);
+//         }
+//         else{
+//             bill=2200+((unit-300)*15);
+//         }
+//         if(bill==0){
+//             System.out.println("Invalid units");
+//         }
+//         else{
+//             System.out.print("Total bill to be paid : ");
+//             System.out.println(bill);
+//         }
+//         sc.close();
+//     }
+// }
