@@ -82,44 +82,44 @@
 
 
 
-import java.util.Scanner;
-public class hlo {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number : ");
-        int firstNumber = sc.nextInt();
-        System.out.print("Enter the operator : ");
-        char op = sc.next().charAt(0);
-        System.out.print("Enter second number : ");
-        int secondNumber = sc.nextInt();
-        int result = 0;
-        boolean valid = true;
-        if (op == '+') {
-            result = firstNumber + secondNumber;
-        }
-        else if (op == '-') {
-            result = firstNumber - secondNumber;
-        }
-        else if (op == '*') {
-            result = firstNumber * secondNumber;
-        }
-        else if (op == '/') {
+// import java.util.Scanner;
+// public class hlo {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter first number : ");
+//         int firstNumber = sc.nextInt();
+//         System.out.print("Enter the operator : ");
+//         char op = sc.next().charAt(0);
+//         System.out.print("Enter second number : ");
+//         int secondNumber = sc.nextInt();
+//         int result = 0;
+//         boolean valid = true;
+//         if (op == '+') {
+//             result = firstNumber + secondNumber;
+//         }
+//         else if (op == '-') {
+//             result = firstNumber - secondNumber;
+//         }
+//         else if (op == '*') {
+//             result = firstNumber * secondNumber;
+//         }
+//         else if (op == '/') {
 
-            if (secondNumber == 0) {
-                System.out.println("Cannot divide by zero");
-                valid = false;
-            }
-            else {
-                result = firstNumber / secondNumber;
-            }
-        }
-        else {
-            System.out.println("Invalid Operator");
-            valid = false;
-        }
-        if (valid) {
-            System.out.println("Result is : " + result);
-        }
-        sc.close();
-    }
-}
+//             if (secondNumber == 0) {
+//                 System.out.println("Cannot divide by zero");
+//                 valid = false;
+//             }
+//             else {
+//                 result = firstNumber / secondNumber;
+//             }
+//         }
+//         else {
+//             System.out.println("Invalid Operator");
+//             valid = false;
+//         }
+//         if (valid) {
+//             System.out.println("Result is : " + result);
+//         }
+//         sc.close();
+//     }
+// }
