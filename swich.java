@@ -92,52 +92,52 @@
 
 
 
-import java.util.Scanner;
-public class swich {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Menu:");
-        System.out.println("1. Check Balance");
-        System.out.println("2. Deposit");
-        System.out.println("3. Withdraw");
-        System.out.println("4. Exit");
-        System.out.print("Enter your choice: ");
-        int choice = sc.nextInt();
-        int balance = 10000;
-        switch (choice) {
-            case 1:
-                System.out.println("Your Balance is: " + balance);
-                break;
-            case 2:
-                System.out.print("Enter the amount you want to deposit: ");
-                int amount = sc.nextInt();
-                if (amount > 0) {
-                    balance += amount;
-                    System.out.println("Amount deposited successfully");
-                    System.out.println("Current Balance: " + balance);
-                }
-                else {
-                    System.out.println("Invalid Amount");
-                }
-                break;
-            case 3:
-                System.out.print("Enter the money you want to withdraw: ");
-                int money = sc.nextInt();
-                if (money > 0 && money <= balance) {
-                    balance -= money;
-                    System.out.println("Withdrawal successful");
-                    System.out.println("Current Balance: " + balance);
-                }
-                else {
-                    System.out.println("Invalid Amount or Low Balance");
-                }
-                break;
-            case 4:
-                System.out.println("Thanks for Banking with us");
-                break;
-            default:
-                System.out.println("Invalid Choice");
-        }
-        sc.close();
-    }
-}
+// import java.util.Scanner;
+// public class swich {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Menu:");
+//         System.out.println("1. Check Balance");
+//         System.out.println("2. Deposit");
+//         System.out.println("3. Withdraw");
+//         System.out.println("4. Exit");
+//         System.out.print("Enter your choice: ");
+//         int choice = sc.nextInt();
+//         int balance = 10000;
+//         switch (choice) {
+//             case 1:
+//                 System.out.println("Your Balance is: " + balance);
+//                 break;
+//             case 2:
+//                 System.out.print("Enter the amount you want to deposit: ");
+//                 int amount = sc.nextInt();
+//                 if (amount > 0) {
+//                     balance += amount;
+//                     System.out.println("Amount deposited successfully");
+//                     System.out.println("Current Balance: " + balance);
+//                 }
+//                 else {
+//                     System.out.println("Invalid Amount");
+//                 }
+//                 break;
+//             case 3:
+//                 System.out.print("Enter the money you want to withdraw: ");
+//                 int money = sc.nextInt();
+//                 if (money > 0 && money <= balance) {
+//                     balance -= money;
+//                     System.out.println("Withdrawal successful");
+//                     System.out.println("Current Balance: " + balance);
+//                 }
+//                 else {
+//                     System.out.println("Invalid Amount or Low Balance");
+//                 }
+//                 break;
+//             case 4:
+//                 System.out.println("Thanks for Banking with us");
+//                 break;
+//             default:
+//                 System.out.println("Invalid Choice");
+//         }
+//         sc.close();
+//     }
+// }
