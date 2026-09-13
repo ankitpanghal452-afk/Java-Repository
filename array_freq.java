@@ -69,33 +69,33 @@
 
 
 // Find the First Non-Repeating Element
-import java.util.Scanner;
-public class array_freq{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter th length of an array : ");
-        int length=sc.nextInt();
-        int[] arr=new int[length];
-        for(int i=0;i<length;i++){
-            System.out.print("Enter element :");
-            arr[i]=sc.nextInt();
-        }
-        boolean found = false;
-        for(int i = 0; i < length; i++){
-            int count = 0;
-            for(int j = 0; j < length; j++){
-                if(arr[i] == arr[j]){
-                    count++;
-                }
-            }
-            if(count == 1){
-                System.out.println("First non repeating element is : " + arr[i]);
-                found = true;
-                break;
-            }
-        }
-        if(!found){
-            System.out.println("No element is non repeating");
-        }
-    }           
-}
+// import java.util.Scanner;
+// public class array_freq{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter th length of an array : ");
+//         int length=sc.nextInt();
+//         int[] arr=new int[length];
+//         for(int i=0;i<length;i++){
+//             System.out.print("Enter element :");
+//             arr[i]=sc.nextInt();
+//         }
+//         boolean found = false;
+//         for(int i = 0; i < length; i++){
+//             int count = 0;
+//             for(int j = 0; j < length; j++){
+//                 if(arr[i] == arr[j]){
+//                     count++;
+//                 }
+//             }
+//             if(count == 1){
+//                 System.out.println("First non repeating element is : " + arr[i]);
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if(!found){
+//             System.out.println("No element is non repeating");
+//         }
+//     }           
+// }

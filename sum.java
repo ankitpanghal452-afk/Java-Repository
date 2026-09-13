@@ -82,38 +82,61 @@
 
 
 // Find the Union of Two Arrays
-import java.util.Scanner;
-public class sum{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the length of first array : ");
-        int length=sc.nextInt();
-        int[] arr1=new int[length];
-        for(int i=0;i<length;i++){
-            System.out.print("Enter element : ");
-            arr1[i]=sc.nextInt();
-        }
-        System.out.print("Enter the length of second array : ");
-        int len=sc.nextInt();
-        int[] arr2=new int[len];
-        for(int i=0;i<len;i++){
-            System.out.print("Enter element : ");
-            arr2[i]=sc.nextInt();
-        }
-        int count=0;
-        int newLength=length+len;
-        int[] uni=new int[newLength];
-        for(int i=0;i<length;i++){
-            uni[count]=arr1[i];
-            count++;
-        }
-        for(int j=0;j<len;j++){
-            uni[count]=arr2[j];
-            count++;
-        }
-        for(int i=0;i<newLength;i++){
-            System.out.println(uni[i]);
-        }
-        sc.close();
-    }
-}
+// import java.util.Scanner;
+// public class sum {
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         // First array
+//         System.out.print("Enter the length of first array: ");
+//         int length=sc.nextInt();
+//         int[] arr1=new int[length];
+//         for (int i=0;i<length;i++) {
+//             System.out.print("Enter element: ");
+//             arr1[i]=sc.nextInt();
+//         }
+//         // Second array
+//         System.out.print("Enter the length of second array: ");
+//         int len=sc.nextInt();
+//         int[] arr2=new int[len];
+//         for (int i=0;i<len;i++){
+//             System.out.print("Enter element: ");
+//             arr2[i]=sc.nextInt();
+//         }
+//         // Create combined array
+//         int newLength = length + len;
+//         int[] uni = new int[newLength];
+//         int count = 0;
+//         // Add first array
+//         for (int i=0;i<length;i++){
+//             uni[count] = arr1[i];
+//             count++;
+//         }
+//         // Add second array
+//         for (int i=0;i<len;i++){
+//             uni[count]=arr2[i];
+//             count++;
+//         }
+//         // Remove duplicates
+//         int[] unique=new int[newLength];
+//         int uniqueCount=0;
+//         for (int i=0;i<newLength;i++){
+//             boolean duplicate = false;
+//             for (int j=0;j<uniqueCount;j++){
+//                 if (uni[i]==unique[j]) {
+//                     duplicate=true;
+//                     break;
+//                 }
+//             }
+//             if(!duplicate){
+//                 unique[uniqueCount]=uni[i];
+//                 uniqueCount++;
+//             }
+//         }
+//         // Print union
+//         System.out.print("Union: ");
+//         for (int i=0;i<uniqueCount;i++){
+//             System.out.print(unique[i] + " ");
+//         }
+//         sc.close();
+//     }
+// }

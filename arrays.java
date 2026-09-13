@@ -88,37 +88,37 @@
 
 
 
-import java.util.Scanner;
-public class arrays{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the length of an array : ");
-        int length=sc.nextInt();
-        int[] arr=new int[length];
-        boolean isPalindrome=true;
-        for(int i=0;i<length;i++){
-            System.out.print("Enter element "+ i + ": ");
-            arr[i]=sc.nextInt();
-        }
-        int left=0;
-        int right=length-1;
-        while(left<right){
-            if(arr[left]==arr[right]){
-                isPalindrome=true;
-                left++;
-                right--;
-            }
-            else{
-                isPalindrome=false;
-                break;
-            }
-        }
-        if(isPalindrome==true){
-            System.out.println("Array is an Palindrome");
-        }
-        else{
-            System.out.println("Array is not Palindrome");
-        }
-        sc.close();
-    }
-}
+// import java.util.Scanner;
+// public class arrays{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter the length of an array : ");
+//         int length=sc.nextInt();
+//         int[] arr=new int[length];
+//         boolean isPalindrome=true;
+//         for(int i=0;i<length;i++){
+//             System.out.print("Enter element "+ i + ": ");
+//             arr[i]=sc.nextInt();
+//         }
+//         int left=0;
+//         int right=length-1;
+//         while(left<right){
+//             if(arr[left]==arr[right]){
+//                 isPalindrome=true;
+//                 left++;
+//                 right--;
+//             }
+//             else{
+//                 isPalindrome=false;
+//                 break;
+//             }
+//         }
+//         if(isPalindrome==true){
+//             System.out.println("Array is an Palindrome");
+//         }
+//         else{
+//             System.out.println("Array is not Palindrome");
+//         }
+//         sc.close();
+//     }
+// }

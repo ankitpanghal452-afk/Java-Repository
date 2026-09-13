@@ -94,24 +94,24 @@
 
 
 // Find Duplicate Elements in an Array
-import java.util.Scanner;
-public class arrays_01{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the length of an array : ");
-        int length=sc.nextInt();
-        int arr[]=new int[length];
-        for(int i=0;i<length;i++){
-            System.out.println("Enter the "+ i +" element of an array : ");
-            arr[i]=sc.nextInt();
-        }
-        for(int i=0;i<length;i++){
-            for(int j=i+1;j<length;j++){
-                if(arr[i]==arr[j]){
-                    System.out.println(arr[i]+ " is an duplicate element");
-                }
-            }
-        }
-        sc.close();
-    }
-}
+// import java.util.Scanner;
+// public class arrays_01{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter the length of an array : ");
+//         int length=sc.nextInt();
+//         int arr[]=new int[length];
+//         for(int i=0;i<length;i++){
+//             System.out.println("Enter the "+ i +" element of an array : ");
+//             arr[i]=sc.nextInt();
+//         }
+//         for(int i=0;i<length;i++){
+//             for(int j=i+1;j<length;j++){
+//                 if(arr[i]==arr[j]){
+//                     System.out.println(arr[i]+ " is an duplicate element");
+//                 }
+//             }
+//         }
+//         sc.close();
+//     }
+// }
